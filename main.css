@@ -15,6 +15,16 @@ html, body {
   border-radius: 10px;
   background: #e47a7a;
 }
+::-moz-scrollbar {
+  width: 6px;
+}
+::-moz-scrollbar-track {
+  background: #222;
+}
+::-moz-scrollbar-thumb {
+  border-radius: 10px;
+  background: #e47a7a;
+}
 ::selection {
   background: #e47a7a;
 }
