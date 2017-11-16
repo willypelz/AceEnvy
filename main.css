@@ -211,7 +211,7 @@ h2 {
 .downbtn {
   outline: none;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px;
   background: linear-gradient(262deg,#fc785a,#f92d7f);
   color: #fff;
   width: 60%;
