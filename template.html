@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- #### Fonts #### -->
+  <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+  <!-- #### Stylesheets #### -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="images/angular.png">
+  <!-- #### CDN's #### -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  <title>Templates | AceEnvy.com</title>
+</head>
+<body>
+  <div class="banner">
+    <p><i>AceEnvy &#9824;</i></p>
+    <center>
+      <h1><span id="line">Beautiful Templates</span> <br /> For Free</h1>
+    </center>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <center>
+        <a href="index.html">Home</a>
+        <a href="template.html">Templates</a>
+        <a href="about.html">About Us</a>
+        <p>Contact Us</p>
+        <button onclick="newPage(0)" class="conbtn">&middot; Faceboook &middot;</button>
+        <button onclick="newPage(1)" class="conbtn">&middot; Instagram &middot;</button>
+        <button onclick="newPage(2)" class="conbtn">&middot; Github &middot;</button>
+        <button onclick="newPage(3)" class="conbtn">&middot; Email &middot;</button>
+      </center>
+    </div>
+    <span class="menubtn" onclick="openNav()">&#8801;</span>
+  </div>
+  <div class="template">
+    <center>
+      <table style="width: 100%;">
+        <tr>
+          <td class="table">
+            <select class="dropdown" onchange="showDiv(this)">
+              <option value="select">Select</option>
+              <option value="new">New</option>
+              <option value="featured">Featured</option>
+            </select>
+          </td>
+        </tr>
+      </table><br />
+      <div id="new" style="display: inline-block; padding: 5px;">
+        <img src="images/tru.png" class="img"><br />
+        <ul>
+          <p>Our Style</p><br />
+          <button onclick="newPage(4)" class="downbtn">Download</button>
+        </ul>
+      </div>
+    </center>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
