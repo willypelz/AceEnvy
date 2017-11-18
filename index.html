@@ -1,59 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- #### Fonts #### -->
-  <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-  <!-- #### Stylesheets #### -->
-  <link rel="stylesheet" href="main.css">
-  <link rel="shortcut icon" href="images/angular.png">
-  <!-- #### CDN's #### -->
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-  <title>Home | AceEnvy.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | AceEnvy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/ace.png">
 </head>
+
 <body>
-  <div class="banner">
-    <p><i>AceEnvy &#9824;</i></p>
-    <center>
-      <h1><span id="line">We Build Templates</span> <br /> So You Don't Have To</h1>
-    </center>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <center>
-        <a href="index.html">Home</a>
-        <a href="template.html">Templates</a>
-        <a href="users.html">Contributors</a>
-        <a href="about.html">About Us</a>
-        <p>Contact Us</p>
-        <button onclick="newPage(0)" class="conbtn">&middot; Faceboook &middot;</button>
-        <button onclick="newPage(1)" class="conbtn">&middot; Instagram &middot;</button>
-        <button onclick="newPage(2)" class="conbtn">&middot; Github &middot;</button>
-        <button onclick="newPage(3)" class="conbtn">&middot; Email &middot;</button>
-      </center>
-    </div>
-    <span class="menubtn" onclick="openNav()">&#8801;</span>
-  </div>
-  <div class="new">
-    <center>
-      <h2><i>New Arrivals:</i></h2><br />
-      <div style="display: inline-block; padding: 5px;">
-        <img src="images/ddc.png" class="img"><br />
-        <ul>
-          <p>D.D.C</p><br />
-          <button onclick="newPage(8)" class="downbtn">Download</button>
-        </ul>
-      </div>
-      <div style="display: inline-block; padding: 5px;">
-        <img src="images/tru.png" class="img"><br />
-        <ul>
-          <p>Our Style</p><br />
-          <button onclick="newPage(4)" class="downbtn">Download</button>
-        </ul>
-      </div>
-    </center>
-  </div>
-  <script src="main.js"></script>
+    <section class="hero is-fullheight is-black" id="home-header">
+        <div class="hero-head">
+            <div class="container">
+                <header class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a href="index.html" class="navbar-item">
+                            <img src="/images/logo.png" alt="AceEnvy">
+                        </a>
+                        <button class="button navbar-burger" data-target="nav-menu" onclick="openNav()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="navbar-menu has-text-centered" id="nav-menu">
+                        <div class="navbar-end">
+                            <a href="index.html" class="navbar-item">HOME</a>
+                            <a href="src/templates.html" class="navbar-item">TEMPLATES</a>
+                            <a href="src/contributors.html" class="navbar-item">CONTRIBUTORS</a>
+                            <a href="src/about.html" class="navbar-item">ABOUT US</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="is-size-5" href="index.html" onclick="closeNav()">HOME</a>
+                <a class="is-size-5" href="src/templates.html" onclick="closeNav()">TEMPLATES</a>
+                <a class="is-size-5" href="src/contributors.html" onclick="closeNav()">CONTRIBUTORS</a>
+                <a class="is-size-5" href="src/about.html" onclick="closeNav()">ABOUT US</a>
+            </div>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="is-size-1 is-size-3-mobile">
+                    <strong>WE BUILD TEMPLATES</strong>
+                </h1>
+                <h1 class="is-size-4 is-size-6-mobile">SO
+                    <u>YOU</u> DONT HAVE TO</h1>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-medium" id="new-arrivals">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="is-size-2 is-size-3-mobile has-text-centered" style="margin-bottom: 30px;">NEW ARRIVALS</h1>
+                <div class="columns">
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-16by9">
+                                    <img src="images/tru.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="card-content has-text-centered">
+                                <h1 class="is-size-3 is-size-5-mobile">ACE</h1>
+                                <a href="#" class="button download-button is-small" onclick="newPage(0)">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-16by9">
+                                    <img src="images/ddc.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="card-content has-text-centered">
+                                <h1 class="is-size-3 is-size-5-mobile">#DDC</h1>
+                                <a href="#" class="button download-button is-small" onclick="newPage(1)">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hero is-black">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="is-size-6">AceEnvy by
+                    <u>Alexandra Wilson</u>
+                </h1>
+                <a href="https://www.facebook.com/alexandracodes34">
+                    <span class="icon has-text-white">
+                        <i class="fa fa-facebook"></i>
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/alexandracodes34/">
+                    <span class="icon has-text-white">
+                        <i class="fa fa-instagram"></i>
+                    </span>
+                </a>
+                <a href="https://github.com/alexandracodes34">
+                    <span class="icon has-text-white">
+                        <i class="fa fa-github"></i>
+                    </span>
+                </a>
+                <a onclick="newPage(2);">
+                    <span class="icon has-text-white">
+                        <i class="fa fa-envelope-o"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
 </body>
 </html>
