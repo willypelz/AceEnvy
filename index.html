@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- #### Fonts #### -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <!-- #### Stylesheets #### -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- #### CDN's #### -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="shortcut icon" href="images/ace.png">
+  <title>Home | AceEnvy</title>
+</head>
+<body>
+  <section class="hero is-fullheight is-black" id="home-header">
+    <div class="hero-head">
+      <div class="container">
+        <header class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+              <img src="images/logo.png" alt="AceEnvy">
+            </a>
+            <button class="button navbar-burger" data-target="nav-menu" onclick="openNav()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="navbar-menu has-text-centered" id="nav-menu">
+            <div class="navbar-end">
+              <a href="index.html" class="navbar-item">HOME</a>
+              <a href="src/templates.html" class="navbar-item">TEMPLATES</a>
+              <a href="src/contributors.html" class="navbar-item">CONTRIBUTORS</a>
+              <a href="src/about.html" class="navbar-item">ABOUT US</a>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="is-size-5" href="index.html" onclick="closeNav()">HOME</a>
+        <a class="is-size-5" href="src/templates.html" onclick="closeNav()">TEMPLATES</a>
+        <a class="is-size-5" href="src/contributors.html" onclick="closeNav()">CONTRIBUTORS</a>
+        <a class="is-size-5" href="src/about.html" onclick="closeNav()">ABOUT US</a>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="is-size-1 is-size-3-mobile">
+          <strong>WE BUILD TEMPLATES</strong>
+        </h1>
+        <h1 class="is-size-4 is-size-6-mobile">SO
+          <u>YOU</u> DONT HAVE TO</h1>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-medium" id="new-arrivals">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="is-size-2 is-size-3-mobile has-text-centered" style="margin-bottom: 30px;">NEW ARRIVALS</h1>
+          <div class="columns">
+            <div class="column is-half">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="images/tru.png" alt="">
+                  </figure>
+                </div>
+                <div class="card-content has-text-centered">
+                  <h1 class="is-size-3 is-size-5-mobile">ACE</h1>
+                  <a href="#" class="button download-button is-small" onclick="newPage(2)">Download</a>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="images/ddc.png" alt="">
+                  </figure>
+                </div>
+                <div class="card-content has-text-centered">
+                  <h1 class="is-size-3 is-size-5-mobile">#DDC</h1>
+                  <a href="#" class="button download-button is-small" onclick="newPage(3)">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-black">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="is-size-6">AceEnvy&copy; by
+            <u>Alexandra Wilson</u> &
+            <u>Nadia Rodriguez</u>
+          </h1>
+          <a href="https://www.facebook.com/alexandracodes34" target="_blank">
+            <span class="icon has-text-white">
+              <i class="fa fa-facebook"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/alexandracodes34/" target="_blank">
+            <span class="icon has-text-white">
+              <i class="fa fa-instagram"></i>
+            </span>
+          </a>
+          <a href="https://github.com/alexandracodes34" target="_blank">
+            <span class="icon has-text-white">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          <a href="mailto:alexandracodes34@gmail.com" target="_blank">
+            <span class="icon has-text-white">
+              <i class="fa fa-envelope-o"></i>
+            </span>
+          </a>
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VKYTDV8RQHHAA" target="_blank">
+            <span class="icon has-text-white">
+              <i class="fa fa-usd"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+  </html>
