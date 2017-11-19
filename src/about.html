@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About | AceEnvy</title>
+    <link rel="stylesheet" href="https://unpkg.com/buefy@0.6.1/lib/buefy.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../images/ace.png">
+</head>
+        <section class="hero is-fullheight is-black" id="home-header">
+                <div class="hero-head">
+                    <div class="container">
+                        <header class="navbar" role="navigation" aria-label="main navigation">
+                            <div class="navbar-brand">
+                                <a href="../index.html" class="navbar-item">
+                                    <img src="../images/logo.png" alt="AceEnvy">
+                                </a>
+                                <button class="button navbar-burger" data-target="nav-menu" onclick="openNav()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="navbar-menu has-text-centered" id="nav-menu">
+                                <div class="navbar-end">
+                                    <a href="../index.html" class="navbar-item">HOME</a>
+                                    <a href="templates.html" class="navbar-item">TEMPLATES</a>
+                                    <a href="contributors.html" class="navbar-item">CONTRIBUTORS</a>
+                                    <a href="about.html" class="navbar-item">ABOUT US</a>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a class="is-size-5" href="../index.html" onclick="closeNav()">HOME</a>
+                        <a class="is-size-5" href="templates.html" onclick="closeNav()">TEMPLATES</a>
+                        <a class="is-size-5" href="contributors.html" onclick="closeNav()">CONTRIBUTORS</a>
+                        <a class="is-size-5" href="aboutus.html" onclick="closeNav()">ABOUT US</a>
+                    </div>
+                </div>
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="is-size-1 is-size-3-mobile">
+                            <strong>ABOUT US</strong>
+                        </h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <div class="columns" style="margin-bottom: 50px;">
+                            <div class="column is-half">
+                                <h1 class="is-size-3">WHO ARE WE?</h1>
+                                <p>
+                                    Ace♠Envy  is dedicated to sharing free open source web designs online.
+                                    The aim is to bring together the very best web designs on the web so that
+                                    others may benefit and start their own web projects quickly and easily.
+                                </p>
+                            </div>
+                            <div class="column is-half">
+                                <h1 class="is-size-3">WHY US?</h1>
+                                <p>
+                                    We see thousands of developers each and every day sharing their projects on social media
+                                    and we also see thousands of developers struggling with designing their own projects.
+                                    We thought we should help by collecting templates and making them free to download.
+                                    If you are a developer and want to upload a template, please read the Q&A.
+                                </p>
+                            </div>
+                        </div>
+
+                    <h1 class="is-size-3">Q&A</h1>
+                    <div class="container has-text-left">
+                <button class="accordion is-size-5">Q. How can I share my design? <p>+</p></button>
+                <div class="question">
+                  <p>You can submit your design to the owner's github repo so that she can merge it.</p>
+                </div>
+
+                <button class="accordion is-size-5">Q. Are the templates really free? <p>+</p></button>
+                <div class="question">
+                  <p>Yes all of the designs are free. They are either made by us or by users who wanted to share their design and gave us permission to use it.</p>
+                </div>
+
+                <button class="accordion is-size-5">Q. How will I know who made the design? <p>+</p></button>
+                <div class="question">
+                  <p>We have a full page dedicated to developers who submited their designs in the <a href="contributors.html">contributors</a> page.</p>
+                </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="hero is-black">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="is-size-6">AceEnvy&copy; by
+                            <u>Alexandra Wilson</u> &
+                            <u>Nadia Rodriguez</u>
+                        </h1>
+                        <a href="https://www.facebook.com/alexandracodes34">
+                            <span class="icon has-text-white">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/alexandracodes34/">
+                            <span class="icon has-text-white">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/alexandracodes34">
+                            <span class="icon has-text-white">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                        <a onclick="newPage(2);">
+                            <span class="icon has-text-white">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    <script src="../js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.1/vue.js"></script>
+    <script src="https://unpkg.com/buefy@0.6.1/lib/index.js"></script>
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+              }
+            }
+    </script>
+</body>
+</html>
