@@ -54,15 +54,6 @@ body, a, .accordion {
   background-size: cover;
   background-attachment: fixed;
 }
-.navbar-burger {
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  border: none;
-}
-.navbar-burger:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-}
 .download-button {
   background: #f92d7f;
   background: -webkit-linear-gradient(-70deg,#fc785a,#f92d7f);
