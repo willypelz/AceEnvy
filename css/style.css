@@ -11,6 +11,15 @@ body, a, .accordion {
   border-radius: 10px;
   background: #ccc;
 }
+.navbar-burger {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+}
+.navbar-burger:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
 .sidenav {
   height: 100%;
   width: 0;
